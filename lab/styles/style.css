@@ -1,0 +1,38 @@
+.calculator {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    width: 450px;
+    height: 450px;
+    padding: 20px;
+    border: 4px solid #6DACD5;
+}
+
+#output {
+    display: flex;
+    padding: 10px;
+    border: 1px solid black;
+    grid-column: 1 / 6;
+    text-align: right;
+    font-size: 36px;
+    align-items: center;
+    justify-content: right;
+}
+
+.equals {
+    grid-row: 4 / 6;
+    grid-column: 5 / 6;
+}
+
+.zero {
+    grid-column: 1 / 3;
+}
+
+button {
+    font-size: 30px;
+}
+
+button:active {
+    border: 2px solid #A6C7FF;
+}
